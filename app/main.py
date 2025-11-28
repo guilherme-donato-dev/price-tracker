@@ -30,7 +30,7 @@ async def health_check():
     return {"status": "healthy"}
 
 
-# Importar routers aqui depois que criar
-# from app.routers import products, alerts
-# app.include_router(products.router)
-# app.include_router(alerts.router)
+# Importar routers
+from app.routers import products
+
+app.include_router(products.router)
